@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Confort</title>
+    <link rel="icon" type="image/png" href="/resources/stema_transparent.png">
+    <link rel="stylesheet" href="/base_style.css">
+    <link rel="stylesheet" href="/carousel_style.css">
+    <link rel="stylesheet" href="/index_style.css">
+    <link rel="stylesheet" href="/cazare_style.css">
+    <script type="text/javascript" src="/carousel.js" defer></script>
+    <script type="text/javascript" src="/hamburger_menu.js" defer></script>
+    <script type="text/javascript" src="/formular.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul id="nav_links">
+                <div class="stema">
+                    <img src="/resources/stema_transparent.png" alt="Stema Cluj">
+                    <p>Cluj-Napoca</p>
+                </div>
+                <div class="hamburger" onclick="arata_meniu()">
+                    &#9776;
+                </div>
+                <li class="navbar_item"><a href="/index.html">Pagina Principală</a></li>
+                <li class="navbar_item"><a href="/atractii/atractii.html">Atracții</a></li>
+                <li class="navbar_item"><a href="/cazare/cazare.html">Cazare</a></li>
+                <li class="navbar_item"><a href="/evenimente/evenimente.html">Evenimente</a></li>
+                <li class="navbar_item"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="chenar_intro">
+            <h1>Hotel Confort</h1>
+            <p class="intro">Situat la doar 500 de metri de centrul orașului Cluj-Napoca, Hotelul Confort a fost renovat în 2013 și oferă WiFi gratuit. Opera Naţională şi principalele atracţii turistice ale oraşului se găsesc la câteva minute de mers pe jos.
+            Toate camerele includ aer condiţionat, TV cu ecran plat cu canale prin cablu, cutie de valori şi minibar. Băile private includ duş, articole de toaletă gratuite şi uscător de păr.
+            În fiecare dimineaţă, restaurantul oferă un mic dejun tip bufet într-un cadru elegant.</p>
+        </div>
+        <div class="content_container">
+            <div class="carousel">
+                <div class="slide fade">
+                    <img src="/resources/poze-cazari/hotel-confort.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="/resources/poze-cazari/hotel-confort-2.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="/resources/poze-cazari/hotel-confort-3.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="/resources/poze-cazari/hotel-confort-4.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="urm_slide(-1)">&#10094;</a>
+                <a class="next" onclick="urm_slide(1)">&#10095;</a>
+                <br>
+                <div class="dot_container" style="text-align:center">
+                    <span class="dot" onclick="slide_actual(1)"></span>
+                    <span class="dot" onclick="slide_actual(2)"></span>
+                    <span class="dot" onclick="slide_actual(3)"></span>
+                    <span class="dot" onclick="slide_actual(4)"></span>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.0578153608476!2d23.59520507669118!3d46.763756845798405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c2e54834073%3A0x3db53e19b29fccb4!2sHotel%20Confort!5e0!3m2!1sen!2sro!4v1737229162023!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="booking_container">
+            <h2>Rezervare Camera</h2>
+            <form name="formular_contact" class="booking_form">
+                <label for="name">Nume:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email_text">E-mail:</label>
+                <input type="text" id="email_text" name="email_text">
+                
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="check_in">Data Check-in:</label>
+                <input type="date" id="check_in" name="check_in">
+                
+                <label for="check_out">Data Check-out:</label>
+                <input type="date" id="check_out" name="check_out">
+                
+                <label for="guests">Număr Oaspeți:</label>
+                <input type="number" id="guests" name="guests" min="1" max="4">
+                
+                <label for="message">Mesaj:</label>
+                <textarea id="message" name="message"></textarea>
+                
+                <input type="submit" value="Rezervă">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a>©2025 Foica David</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

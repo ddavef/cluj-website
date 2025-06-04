@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statuia lui Avram Iancu</title>
+    <link rel="icon" type="image/png" href="/resources/stema_transparent.png">
+    <link rel="stylesheet" href="/base_style.css">
+    <link rel="stylesheet" href="/carousel_style.css">
+    <link rel="stylesheet" href="/index_style.css">
+    <link rel="stylesheet" href="/atractii_style.css">
+    <script type="text/javascript" src="/carousel.js" defer></script>
+    <script type="text/javascript" src="/hamburger_menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul id="nav_links">
+                <div class="stema">
+                    <img src="/resources/stema_transparent.png" alt="Stema Cluj">
+                    <p>Cluj-Napoca</p>
+                </div>
+                <div class="hamburger" onclick="arata_meniu()">
+                    &#9776;
+                </div>
+                <li class="navbar_item"><a href="/index.html">Pagina Principală</a></li>
+                <li class="navbar_item"><a href="/atractii/atractii.html">Atracții</a></li>
+                <li class="navbar_item"><a href="/cazare/cazare.html">Cazare</a></li>
+                <li class="navbar_item"><a href="/evenimente/evenimente.html">Evenimente</a></li>
+                <li class="navbar_item"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="chenar_intro">
+            <h1>Statuia lui Avram Iancu</h1>
+            <p class="intro">Statuia lui Avram Iancu din Cluj-Napoca, închinată memoriei personajului istoric român, este amplasată în Piața Avram Iancu, în fața Catedralei Ortodoxe, pe locul unui fost monument al eroilor sovietici.</p>
+        </div>
+        <div class="content_container">
+            <div class="carousel">
+                <div class="slide fade">
+                    <img src="/resources/poze-atractii/statuia-lui-avram-iancu-1.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="/resources/poze-atractii/statuia-lui-avram-iancu-2.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="/resources/poze-atractii/statuia-lui-avram-iancu-3.jpg" style="width:100%">
+                </div>
+                <div class="slide fade">
+                    <img src="/resources/poze-atractii/statuia-lui-avram-iancu-4.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="urm_slide(-1)">&#10094;</a>
+                <a class="next" onclick="urm_slide(1)">&#10095;</a>
+                <br>
+                <div class="dot_container" style="text-align:center">
+                    <span class="dot" onclick="slide_actual(1)"></span>
+                    <span class="dot" onclick="slide_actual(2)"></span>
+                    <span class="dot" onclick="slide_actual(3)"></span>
+                    <span class="dot" onclick="slide_actual(4)"></span>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.675866783118!2d23.59417967669145!3d46.77128514528548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490c26da7b4e19%3A0x9ca18354237fcc1d!2sThe%20Statue%20of%20Avram%20Iancu!5e0!3m2!1sen!2sro!4v1737228544638!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a>©2025 Foica David</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cluj-Napoca</title>
+    <link rel="icon" type="image/png" href="/resources/stema_transparent.png">
+    <link rel="stylesheet" href="/base_style.css">
+    <link rel="stylesheet" href="/index_style.css">
+    <link rel="stylesheet" href="/carousel_style.css">
+    <script type="text/javascript" src="/carousel.js" defer></script>
+    <script type="text/javascript" src="/hamburger_menu.js" defer></script>
+</head>
+<body>
+    <header class="header_index">
+        <nav class="navbar">
+            <ul id="nav_links">
+                    <div class="stema">
+                        <img src="/resources/stema_transparent.png" alt="Stema Cluj">
+                        <p>Cluj-Napoca</p>
+                    </div>
+                    <div class="hamburger" onclick="arata_meniu()">
+                        &#9776;
+                    </div>
+                    <li class="navbar_item"><a href="/index.html">Pagina Principală</a></li>
+                    <li class="navbar_item"><a href="/atractii/atractii.html">Atracții</a></li>
+                    <li class="navbar_item"><a href="/cazare/cazare.html">Cazare</a></li>
+                    <li class="navbar_item"><a href="/evenimente/evenimente.html">Evenimente</a></li>
+                    <li class="navbar_item"><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="chenar_intro">
+            <p class="intro">Cluj-Napoca este al doilea cel mai mare oraș din România și un important centru cultural, academic și economic. 
+                Situat în inima Transilvaniei, orașul se remarcă printr-o atmosferă vibrantă,
+                fiind un hub al tineretului datorită numeroaselor universități și instituții de învățământ superior.
+            </p>
+        </div>
+        <div class="carousel">
+            <div class="slide fade">
+                <img src="./resources/poze-carousel/1.png" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <img src="./resources/poze-carousel/2.jpg" style="width:100%">
+            </div>
+            
+            <div class="slide fade">
+                <img src="./resources/poze-carousel/3.jpg" style="width:100%">
+            </div>
+
+            <div class="slide fade">
+                <img src="./resources/poze-carousel/4.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="urm_slide(-1)">&#10094;</a>
+            <a class="next" onclick="urm_slide(1)">&#10095;</a>
+            <br>
+            <div class="dot_container" style="text-align:center">
+                <span class="dot" onclick="slide_actual(1)"></span>
+                <span class="dot" onclick="slide_actual(2)"></span>
+                <span class="dot" onclick="slide_actual(3)"></span>
+                <span class="dot" onclick="slide_actual(4)"></span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li>
+                <a>©2025 Foica David</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
